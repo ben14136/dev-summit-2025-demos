@@ -78,15 +78,15 @@ mapElement.addEventListener(
       ?.load();
 
     startEditButton.addEventListener("click", async () => {
-      const { success } = await versioningState?.startEditing();
-      if (success) {
+      const result = await versioningState?.startEditing();
+      if (result?.success) {
         updateButtonsStartEdit();
       }
     });
 
     stopEditButton.addEventListener("click", async () => {
-      const { success } = await versioningState?.stopEditing(false);
-      if (success) {
+      const result = await versioningState?.stopEditing(false);
+      if (result?.success) {
         updateButtonsStopEdit();
       }
     });
