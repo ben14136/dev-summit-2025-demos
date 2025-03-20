@@ -10,6 +10,7 @@ import "@arcgis/map-components/components/arcgis-version-management-version-item
 import "@arcgis/map-components/components/arcgis-version-management-version-list";
 import "@arcgis/map-components/components/arcgis-version-management-version-properties";
 import "@arcgis/map-components/components/arcgis-zoom";
+import "@arcgis/map-components/components/arcgis-placement";
 
 import { defineCustomElements } from "@esri/calcite-components/dist/loader";
 
